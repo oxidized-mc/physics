@@ -96,11 +96,7 @@ mod tests {
 
         // Facing 0° (yaw=0): sin(0)=0, cos(0)=1
         // vx -= 0 * 0.2 = 0, vz += 1 * 0.2 = 0.2
-        assert!(
-            vel.x.abs() < 0.001,
-            "vx should be ~0 at yaw=0: {}",
-            vel.x
-        );
+        assert!(vel.x.abs() < 0.001, "vx should be ~0 at yaw=0: {}", vel.x);
         assert!(
             (vel.z - SPRINT_JUMP_BOOST).abs() < 0.001,
             "vz should be ~0.2 at yaw=0: {}",

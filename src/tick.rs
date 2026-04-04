@@ -575,8 +575,8 @@ mod tests {
         vel.x = 1.0;
 
         physics_tick(
-            &mut pos, &mut vel, &mut bbox, &mut og, &mut fd, &PIG_DIMS, &ice_level, &shapes,
-            false, false,
+            &mut pos, &mut vel, &mut bbox, &mut og, &mut fd, &PIG_DIMS, &ice_level, &shapes, false,
+            false,
         );
 
         // On ice: drag = 0.98 * 0.91 = 0.8918
