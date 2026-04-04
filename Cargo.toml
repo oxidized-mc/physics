@@ -12,9 +12,29 @@ keywords     = ["minecraft", "oxidized-mc"]
 categories   = ["game-development"]
 
 [dependencies]
+oxidized-mc-types  = "0.1"
+oxidized-registry  = "0.1"
+glam               = "0.30"
+thiserror           = "2"
 
 [dev-dependencies]
 proptest = "1"
+
+[patch.crates-io]
+oxidized-mc-types    = { path = "../mc-types" }
+oxidized-registry    = { path = "../registry" }
+oxidized-types       = { path = "../types" }
+oxidized-nbt         = { path = "../nbt" }
+oxidized-codec       = { path = "../codec" }
+oxidized-compression = { path = "../compression" }
+oxidized-crypto      = { path = "../crypto" }
+oxidized-auth        = { path = "../auth" }
+oxidized-chat        = { path = "../chat" }
+oxidized-transport   = { path = "../transport" }
+oxidized-chunks      = { path = "../chunks" }
+oxidized-anvil       = { path = "../anvil" }
+oxidized-commands    = { path = "../commands" }
+oxidized-inventory   = { path = "../inventory" }
 
 [lints.rust]
 missing_docs   = "warn"
