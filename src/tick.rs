@@ -279,6 +279,8 @@ mod tests {
     const PIG_DIMS: EntityDimensions = EntityDimensions {
         width: 0.6,
         height: 1.8,
+        eye_height: 1.8 * 0.85,
+        fixed: false,
     };
 
     fn make_floating_state() -> (DVec3, DVec3, Aabb, bool, f32) {
