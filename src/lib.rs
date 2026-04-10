@@ -18,6 +18,7 @@
 #![deny(unsafe_code)]
 
 use oxidized_mc_types::BlockPos;
+pub use oxidized_mc_types::EntityDimensions;
 
 pub mod collision;
 pub mod constants;
@@ -25,18 +26,6 @@ pub mod jump;
 pub mod slow_blocks;
 pub mod tick;
 pub mod voxel_shape;
-
-/// Entity hitbox dimensions.
-///
-/// Width and height in meters (blocks). Used to reconstruct the AABB
-/// after a position update.
-#[derive(Debug, Clone, Copy, PartialEq)]
-pub struct EntityDimensions {
-    /// Width of the hitbox (meters).
-    pub width: f32,
-    /// Height of the hitbox (meters).
-    pub height: f32,
-}
 
 /// Error returned when a block position cannot be read.
 ///
