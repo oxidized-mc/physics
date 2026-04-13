@@ -16,7 +16,7 @@ categories   = ["game-development"]
 [dependencies]
 oxidized-mc-types    = "0.3"
 oxidized-registry    = "0.1.0-dev"
-glam               = "0.30"
+glam               = "0.32"
 thiserror           = "2"
 
 [dev-dependencies]
